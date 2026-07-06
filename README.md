@@ -13,7 +13,7 @@ Author: Many
 
 Source database:
 
-/home/dfki.uni-bremen.de/mschilling/DFKI/XROCK/software/database/example_db dev
+software/database/example_db dev
 
 ## Build instructions
 
