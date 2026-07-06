@@ -18,6 +18,70 @@
     },
     {
       "direction": "bidirectional",
+      "name": "rotor_mounting",
+      "parent": "joint_0_rotor",
+      "position": [
+        0.0,
+        0.0,
+        0.015
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "GenericMechanicalInterface"
+    },
+    {
+      "direction": "bidirectional",
+      "name": "mountingA",
+      "parent": "link_mountingA",
+      "position": [
+        0.0,
+        0.0,
+        -0.015
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "GenericMechanicalInterface"
+    },
+    {
+      "direction": "bidirectional",
+      "name": "mountingB",
+      "parent": "link_mountingB",
+      "position": [
+        0.0,
+        0.0,
+        -0.015
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "GenericMechanicalInterface"
+    },
+    {
+      "direction": "bidirectional",
+      "name": "stator_mounting_2",
+      "parent": "joint_1_stator",
+      "position": [
+        0.0,
+        0.0,
+        -0.015
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "GenericMechanicalInterface"
+    },
+    {
+      "direction": "bidirectional",
       "name": "rotor_mounting_2",
       "parent": "joint_1_rotor",
       "position": [
