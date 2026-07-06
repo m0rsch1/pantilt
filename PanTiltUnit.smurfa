@@ -1,0 +1,106 @@
+{
+  "entities": [
+    {
+      "anchor": "none",
+      "file": "398719224/smurf/joint.smurf",
+      "name": "joint_0",
+      "parent": "world",
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "root": true,
+      "rotation": {
+        "w": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "type": "smurf"
+    },
+    {
+      "anchor": "parent",
+      "file": "398719224/smurf/joint.smurf",
+      "name": "joint_1",
+      "parent": "link::mountingB",
+      "position": {
+        "x": 0.0,
+        "y": -1.8369701987210296e-18,
+        "z": -0.03
+      },
+      "rotation": {
+        "w": 6.123233995736766e-17,
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "type": "smurf"
+    },
+    {
+      "anchor": "parent",
+      "file": "2983306817/smurf/link.smurf",
+      "name": "link",
+      "parent": "joint_0::rotor",
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.03
+      },
+      "rotation": {
+        "w": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "type": "smurf"
+    }
+  ],
+  "export_config": [
+    {
+      "additional_meshes": [
+        "bobj"
+      ],
+      "enforce_zero": false,
+      "filename_suffix": "",
+      "include_cut_joints": false,
+      "link_in_smurf": true,
+      "mesh_format": "obj",
+      "ros_pathes": false,
+      "type": "urdf"
+    },
+    {
+      "enforce_zero": false,
+      "filename_suffix": "_stl",
+      "include_cut_joints": false,
+      "mesh_format": "stl",
+      "ros_pathes": false,
+      "type": "urdf"
+    },
+    {
+      "additional_meshes": [
+        "bobj"
+      ],
+      "enforce_zero": false,
+      "include_cut_joints": false,
+      "link_in_smurf": false,
+      "mesh_format": "obj",
+      "ros_pathes": false,
+      "type": "sdf"
+    },
+    {
+      "file_name": "joint_limits.yml",
+      "joints": "ALL",
+      "type": "joint_limits"
+    },
+    {
+      "abstract_model": true,
+      "name": "abstract_model",
+      "type": "submodel"
+    },
+    {
+      "type": "pdf"
+    }
+  ],
+  "name": "PanTiltUnit"
+}

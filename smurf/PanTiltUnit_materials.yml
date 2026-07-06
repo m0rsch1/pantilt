@@ -1,0 +1,73 @@
+{
+  "materials": [
+    {
+      "diffuseColor": {
+        "a": 1.0,
+        "b": 0.0,
+        "g": 0.0,
+        "r": 1.0
+      },
+      "emissionColor": {
+        "a": 1.0,
+        "b": 0.0,
+        "g": 0.0,
+        "r": 0.0
+      },
+      "name": "stator_material",
+      "shininess": 0.5,
+      "specularColor": {
+        "a": 0.4980392156862745,
+        "b": 0.0,
+        "g": 0.0,
+        "r": 0.4
+      },
+      "transparency": 0.0
+    },
+    {
+      "diffuseColor": {
+        "a": 1.0,
+        "b": 1.0,
+        "g": 0.0,
+        "r": 0.0
+      },
+      "emissionColor": {
+        "a": 1.0,
+        "b": 0.0,
+        "g": 0.0,
+        "r": 0.0
+      },
+      "name": "rotor_material",
+      "shininess": 0.5,
+      "specularColor": {
+        "a": 0.4980392156862745,
+        "b": 0.4,
+        "g": 0.0,
+        "r": 0.0
+      },
+      "transparency": 0.0
+    },
+    {
+      "diffuseColor": {
+        "a": 1.0,
+        "b": 0.0,
+        "g": 1.0,
+        "r": 0.0
+      },
+      "emissionColor": {
+        "a": 1.0,
+        "b": 0.0,
+        "g": 0.0,
+        "r": 0.0
+      },
+      "name": "link_material",
+      "shininess": 0.5,
+      "specularColor": {
+        "a": 0.4980392156862745,
+        "b": 0.4,
+        "g": 0.0,
+        "r": 0.0
+      },
+      "transparency": 0.0
+    }
+  ]
+}

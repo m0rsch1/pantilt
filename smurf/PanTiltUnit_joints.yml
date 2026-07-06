@@ -1,0 +1,190 @@
+{
+  "joints": [
+    {
+      "child": "joint_0_rotor",
+      "constraint_axes": [],
+      "cut_joint": false,
+      "joint_dependencies": [],
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.03
+        ],
+        "relative_to": "joint_0_stator",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_type": "revolute",
+      "name": "joint_0_actuator",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.03
+        ],
+        "relative_to": "joint_0_stator",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "parent": "joint_0_stator"
+    },
+    {
+      "child": "link_mountingA",
+      "constraint_axes": [],
+      "cut_joint": false,
+      "joint_dependencies": [],
+      "joint_type": "fixed",
+      "name": "joint_0_2_link",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.03
+        ],
+        "relative_to": "joint_0_rotor",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "parent": "joint_0_rotor",
+      "type": "fixed"
+    },
+    {
+      "child": "link_rod",
+      "constraint_axes": [],
+      "cut_joint": false,
+      "joint_dependencies": [],
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.015
+        ],
+        "relative_to": "joint_0_2_link",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "joint_type": "fixed",
+      "name": "link_mountingA_to_rod",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.015
+        ],
+        "relative_to": "link_mountingA",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "parent": "link_mountingA"
+    },
+    {
+      "child": "link_mountingB",
+      "constraint_axes": [],
+      "cut_joint": false,
+      "joint_dependencies": [],
+      "joint_relative_origin": {
+        "position": [
+          0.015,
+          0.0,
+          0.07000000000000002
+        ],
+        "relative_to": "link_mountingA_to_rod",
+        "rotation": [
+          0.0,
+          -1.57,
+          0.0
+        ]
+      },
+      "joint_type": "fixed",
+      "name": "link_rod_to_mountingB",
+      "origin": {
+        "position": [
+          0.015,
+          0.0,
+          0.07
+        ],
+        "relative_to": "link_rod",
+        "rotation": [
+          0.0,
+          -1.57,
+          0.0
+        ]
+      },
+      "parent": "link_rod"
+    },
+    {
+      "child": "joint_1_stator",
+      "constraint_axes": [],
+      "cut_joint": false,
+      "joint_dependencies": [],
+      "joint_type": "fixed",
+      "name": "link_2_joint_1",
+      "origin": {
+        "position": [
+          0.0,
+          -1.8369701987210296e-18,
+          -0.03
+        ],
+        "relative_to": "link_mountingB",
+        "rotation": [
+          3.141592653589793,
+          0.0,
+          0.0
+        ]
+      },
+      "parent": "link_mountingB",
+      "type": "fixed"
+    },
+    {
+      "child": "joint_1_rotor",
+      "constraint_axes": [],
+      "cut_joint": false,
+      "joint_dependencies": [],
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          -7.703719777548943e-34,
+          0.029999999999999985
+        ],
+        "relative_to": "link_2_joint_1",
+        "rotation": [
+          4.939555058032061e-40,
+          0.0,
+          -6.623507541491743e-36
+        ]
+      },
+      "joint_type": "revolute",
+      "name": "joint_1_actuator",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.03
+        ],
+        "relative_to": "joint_1_stator",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "parent": "joint_1_stator"
+    }
+  ]
+}

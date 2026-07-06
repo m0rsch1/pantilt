@@ -1,0 +1,249 @@
+{
+  "visuals": [
+    {
+      "geometry": {
+        "geometry_type": "cylinder",
+        "length": 0.03,
+        "radius": 0.03
+      },
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "joint_0_stator",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "name": "joint_0_stator_visual",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "joint_0_stator",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_name": "stator_visual"
+    },
+    {
+      "geometry": {
+        "geometry_type": "cylinder",
+        "length": 0.03,
+        "radius": 0.03
+      },
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "joint_0_actuator",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "name": "joint_0_rotor_visual",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "joint_0_actuator",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_name": "rotor_visual"
+    },
+    {
+      "geometry": {
+        "geometry_type": "cylinder",
+        "length": 0.03,
+        "radius": 0.03
+      },
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "joint_0_2_link",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "name": "link_mountingA",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "joint_0_2_link",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_name": "mountingA"
+    },
+    {
+      "geometry": {
+        "geometry_type": "cylinder",
+        "length": 0.1,
+        "radius": 0.03
+      },
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.05
+        ],
+        "relative_to": "link_mountingA_to_rod",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "name": "link_rod",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.05
+        ],
+        "relative_to": "link_mountingA_to_rod",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_name": "rod"
+    },
+    {
+      "geometry": {
+        "geometry_type": "cylinder",
+        "length": 0.03,
+        "radius": 0.03
+      },
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "link_rod_to_mountingB",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "name": "link_mountingB",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "link_rod_to_mountingB",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_name": "mountingB"
+    },
+    {
+      "geometry": {
+        "geometry_type": "cylinder",
+        "length": 0.03,
+        "radius": 0.03
+      },
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "link_2_joint_1",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "name": "joint_1_stator_visual",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "link_2_joint_1",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_name": "stator_visual"
+    },
+    {
+      "geometry": {
+        "geometry_type": "cylinder",
+        "length": 0.03,
+        "radius": 0.03
+      },
+      "joint_relative_origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "joint_1_actuator",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "name": "joint_1_rotor_visual",
+      "origin": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relative_to": "joint_1_actuator",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_name": "rotor_visual"
+    }
+  ]
+}

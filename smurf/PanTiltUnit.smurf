@@ -1,0 +1,17 @@
+{
+  "additional_files": {
+    "sdf": "../sdf/PanTiltUnit.sdf"
+  },
+  "description": "",
+  "files": [
+    "../urdf/PanTiltUnit.urdf",
+    "PanTiltUnit_interfaces.yml",
+    "PanTiltUnit_joints.yml",
+    "PanTiltUnit_links.yml",
+    "PanTiltUnit_materials.yml",
+    "PanTiltUnit_motors.yml",
+    "PanTiltUnit_visuals.yml"
+  ],
+  "modelname": "PanTiltUnit",
+  "version": "master"
+}

@@ -1,0 +1,188 @@
+<sdf version="1.9">
+<model name="PanTiltUnit" canonical_link="joint_0_stator">
+  <joint name="joint_0_actuator" type="revolute">
+    <pose relative_to="joint_0_stator">0.0 0.0 0.03 0.0 0.0 0.0</pose>
+    <parent>joint_0_stator</parent>
+    <child>joint_0_rotor</child>
+    <axis>
+      <limit>
+        <lower>-3.14</lower>
+        <upper>3.14</upper>
+        <effort>100.0</effort>
+        <velocity>0.2</velocity>
+      </limit>
+      <xyz>0.0 0.0 1.0</xyz>
+    </axis>
+    <axis2/>
+  </joint>
+  <joint name="joint_0_2_link" type="fixed">
+    <pose relative_to="joint_0_rotor">0.0 0.0 0.03 0.0 0.0 0.0</pose>
+    <parent>joint_0_rotor</parent>
+    <child>link_mountingA</child>
+    <axis/>
+    <axis2/>
+  </joint>
+  <joint name="link_mountingA_to_rod" type="fixed">
+    <pose relative_to="link_mountingA">0.0 0.0 0.015 0.0 0.0 0.0</pose>
+    <parent>link_mountingA</parent>
+    <child>link_rod</child>
+    <axis/>
+    <axis2/>
+  </joint>
+  <joint name="link_rod_to_mountingB" type="fixed">
+    <pose relative_to="link_rod">0.015 0.0 0.07 0.0 -1.57 0.0</pose>
+    <parent>link_rod</parent>
+    <child>link_mountingB</child>
+    <axis/>
+    <axis2/>
+  </joint>
+  <joint name="link_2_joint_1" type="fixed">
+    <pose relative_to="link_mountingB">0.0 -1.8369701987210296e-18 -0.03 3.141592653589793 0.0 0.0</pose>
+    <parent>link_mountingB</parent>
+    <child>joint_1_stator</child>
+    <axis/>
+    <axis2/>
+  </joint>
+  <joint name="joint_1_actuator" type="revolute">
+    <pose relative_to="joint_1_stator">0.0 0.0 0.03 0.0 0.0 0.0</pose>
+    <parent>joint_1_stator</parent>
+    <child>joint_1_rotor</child>
+    <axis>
+      <limit>
+        <lower>-3.14</lower>
+        <upper>3.14</upper>
+        <effort>100.0</effort>
+        <velocity>0.2</velocity>
+      </limit>
+      <xyz>0.0 0.0 1.0</xyz>
+    </axis>
+    <axis2/>
+  </joint>
+  <link name="joint_0_stator">
+    <visual name="joint_0_stator_visual">
+      <material>
+        <diffuse>1.0 0.0 0.0 1.0</diffuse>
+        <specular>0.4 0.0 0.0 0.4980392156862745</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <pose relative_to="joint_0_stator">0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.03</radius>
+          <length>0.03</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <link name="joint_0_rotor">
+    <visual name="joint_0_rotor_visual">
+      <material>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 0.4 0.4980392156862745</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <pose relative_to="joint_0_rotor">0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.03</radius>
+          <length>0.03</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_mountingA">
+    <visual name="link_mountingA">
+      <material>
+        <diffuse>0.0 1.0 0.0 1.0</diffuse>
+        <specular>0.0 0.0 0.4 0.4980392156862745</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <pose relative_to="link_mountingA">0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.03</radius>
+          <length>0.03</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_rod">
+    <visual name="link_rod">
+      <material>
+        <diffuse>0.0 1.0 0.0 1.0</diffuse>
+        <specular>0.0 0.0 0.4 0.4980392156862745</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <pose relative_to="link_rod">0.0 0.0 0.05 0.0 0.0 0.0</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.03</radius>
+          <length>0.1</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_mountingB">
+    <visual name="link_mountingB">
+      <material>
+        <diffuse>0.0 1.0 0.0 1.0</diffuse>
+        <specular>0.0 0.0 0.4 0.4980392156862745</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <pose relative_to="link_mountingB">0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.03</radius>
+          <length>0.03</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <link name="joint_1_stator">
+    <visual name="joint_1_stator_visual">
+      <material>
+        <diffuse>1.0 0.0 0.0 1.0</diffuse>
+        <specular>0.4 0.0 0.0 0.4980392156862745</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <pose relative_to="joint_1_stator">0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.03</radius>
+          <length>0.03</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <link name="joint_1_rotor">
+    <visual name="joint_1_rotor_visual">
+      <material>
+        <diffuse>0.0 0.0 1.0 1.0</diffuse>
+        <specular>0.0 0.0 0.4 0.4980392156862745</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <pose relative_to="joint_1_rotor">0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      <geometry>
+        <cylinder>
+          <radius>0.03</radius>
+          <length>0.03</length>
+        </cylinder>
+      </geometry>
+    </visual>
+  </link>
+  <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
+    <joint_name>joint_0_actuator</joint_name>
+    <use_force_commands>0</use_force_commands>
+    <p_gain>20.0</p_gain>
+    <i_gain>0.0</i_gain>
+    <d_gain>0.0</d_gain>
+  </plugin>
+  <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
+    <joint_name>joint_1_actuator</joint_name>
+    <use_force_commands>0</use_force_commands>
+    <p_gain>20.0</p_gain>
+    <i_gain>0.0</i_gain>
+    <d_gain>0.0</d_gain>
+  </plugin>
+</model>
+</sdf>

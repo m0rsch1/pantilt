@@ -1,0 +1,5 @@
+entities:
+  - name: PanTiltUnit
+    file: smurf/PanTiltUnit.smurf
+    rotation: [0.0, 0.0, 0.0]
+    position: [0.0, 0.0, 0.0]

@@ -1,0 +1,46 @@
+{
+  "links": [
+    {
+      "name": "joint_0_stator",
+      "visuals": [
+        "joint_0_stator_visual"
+      ]
+    },
+    {
+      "name": "joint_0_rotor",
+      "visuals": [
+        "joint_0_rotor_visual"
+      ]
+    },
+    {
+      "name": "link_mountingA",
+      "visuals": [
+        "link_mountingA"
+      ]
+    },
+    {
+      "name": "link_rod",
+      "visuals": [
+        "link_rod"
+      ]
+    },
+    {
+      "name": "link_mountingB",
+      "visuals": [
+        "link_mountingB"
+      ]
+    },
+    {
+      "name": "joint_1_stator",
+      "visuals": [
+        "joint_1_stator_visual"
+      ]
+    },
+    {
+      "name": "joint_1_rotor",
+      "visuals": [
+        "joint_1_rotor_visual"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "motors": [
+    {
+      "d": 0.0,
+      "i": 0.0,
+      "joint": "joint_0_actuator",
+      "maxEffort": 100.0,
+      "maxSpeed": 0.2,
+      "maxValue": 3.14,
+      "minValue": -3.14,
+      "name": "joint_0_actuator",
+      "p": 20.0,
+      "pid_config": {},
+      "soft_limits": {},
+      "type": "PID"
+    },
+    {
+      "d": 0.0,
+      "i": 0.0,
+      "joint": "joint_1_actuator",
+      "maxEffort": 100.0,
+      "maxSpeed": 0.2,
+      "maxValue": 3.14,
+      "minValue": -3.14,
+      "name": "joint_1_actuator",
+      "p": 20.0,
+      "pid_config": {},
+      "soft_limits": {},
+      "type": "PID"
+    }
+  ]
+}
